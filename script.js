@@ -53,7 +53,7 @@ calculateTip();
 function reset() {
    
     document.getElementById("bill").textContent = `\₹ 0.00`;
-    document.getElementById("bill").value = 0;
+    document.getElementById("bill").value = 0 ;
 
     document.getElementById("tip-amount").textContent = `\₹ 0`;
     document.getElementById("tip-amount").value = 0 ;
