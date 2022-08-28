@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="shortcut icon" href="./Static/Fav-icon.png" type="image/x-icon">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tip Calculator</h1>
+        </div>
+        <section>
+            <div class="small-container">
+                <label for="bill" class="lbl">
+                    Bill Amount
+                </label>
+                <div class="input-box">
+                    <span class="sym">&#8377;</span>
+                    <input type="number" value="0.00" id="bill" class="val">
+                </div>
+            </div>
+            <div class="small-container">
+                <span class="lbl">Tip</span>
+                <span id="tip-amount" class="val">
+                    &#8377;0
+                </span>
+            </div>
+            <hr>
+            <div class="small-container">
+                <span class="lbl">Total Amount</span>
+                <span id="total-amount" class="val">
+                    &#8377;0
+                </span>
+            </div>
+        </section>
+        <section>
+            <div class="small-container">
+                <label for="tip" class="lbl">Tip %</label>
+                <span id="tip-percent" class="val">0%</span>
+            </div>
+            <input type="range" min="0" id="tip" value="10">
+            <div class="small-container">
+                <label for="no-of-people" class="lbl">No. of People</label>
+                <span id="split-num" class="val">1</span>
+            </div>
+            <input type="range" min="1" max="10" id="no-of-people" value="1">
+        </section>
+        <section>
+            <div class="small-container">
+                <button id="clear" onclick="reset()" class="clear-btn">Clear</button>
+                <button id="calculate" onclick="calculateTip()" class="clc-btn">Calculate</button>
+            </div>
+        </section>
+        <section>
+            <div class="small-container">
+                <span class="lbl">
+                    Tip Per Person
+                </span>
+                <span id="tip-per-person" class="val">
+                    &#8377;0
+                </span>
+            </div>
+            <div class="small-container">
+                <span class="lbl">
+                    Total Per Person
+                </span>
+                <span id="total-per-person" class="val">&#8377;0</span>
+            </div>
+            <div class="footer">
+                <span class="copy">Created By : محمد عاطف</span>
+                <span class="copy">Copyright © 2022-Tip Calculator</span>
+            </div>
+        </section>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
