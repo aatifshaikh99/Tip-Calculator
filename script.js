@@ -9,7 +9,7 @@ const bill_Input = document.getElementById("bill");
 
 var tip_percent;
 var no_of_people;
-let bill ;
+let bill;
 
 
 function tipPercentage() {
@@ -51,12 +51,12 @@ function calculateTip() {
 calculateTip();
 
 function reset() {
-   
+
     document.getElementById("bill").textContent = `\₹ 0.00`;
-    document.getElementById("bill").value = 0 ;
+    document.getElementById("bill").value = 0;
 
     document.getElementById("tip-amount").textContent = `\₹ 0`;
-    document.getElementById("tip-amount").value = 0 ;
+    document.getElementById("tip-amount").value = 0;
 
 
     document.getElementById("total-amount").textContent = `\₹ 0`;
@@ -72,6 +72,6 @@ function reset() {
     document.getElementById("tip-percent").textContent = `10%`;
     document.getElementById("tip").value = 10;
 
-    // document.getElementById("total-per-person").textContent = `\₹ 0`;
+
 }
 reset();
