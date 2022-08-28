@@ -53,7 +53,7 @@ calculateTip();
 function reset() {
 
     document.getElementById("bill").textContent = `\₹ 0.00`;
-    document.getElementById("bill").value = 0;
+    document.getElementById("bill").value = 0 ;
 
     document.getElementById("tip-amount").textContent = `\₹ 0`;
     document.getElementById("tip-amount").value = 0;
@@ -67,10 +67,10 @@ function reset() {
     document.getElementById("tip-per-person").value = 0;
 
     document.getElementById("split-num").textContent = ` 1 `;
-    document.getElementById("no-of-people").value = 1;
+    document.getElementById("no-of-people").value = 1 ;
 
     document.getElementById("tip-percent").textContent = `10%`;
-    document.getElementById("tip").value = 10;
+    document.getElementById("tip").value = 10 ;
 
 
 }

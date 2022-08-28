@@ -51,7 +51,7 @@ body {
 }
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button{
+input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -141,9 +141,15 @@ section:last-child .lbl {
     text-align: center;
     font-size: 18px;
 }
-.footer{
+
+.clear-btn:hover {
+    box-shadow: 10px #f6a7ff;
+    cursor: pointer;
+}
+
+.footer {
     position: fixed;
-    bottom: 0 ;
+    bottom: 0;
     width: 100%;
     left: 0%;
 }
