@@ -37,7 +37,7 @@ function calculateTip() {
 
     let tip_per_person = (total_tip / no_of_people).toFixed(2);
 
-    let total_per_person = (total / no_of_people).toFixed(2);
+    // let total_per_person = (total / no_of_people).toFixed(2);
 
     document.getElementById("tip-amount").textContent = `\₹ ${total_tip}`;
 
@@ -45,21 +45,33 @@ function calculateTip() {
 
     document.getElementById("tip-per-person").textContent = `\₹ ${tip_per_person} `;
 
-    document.getElementById("total-per-person").textContent = `\₹ ${total_per_person}`;
+    // document.getElementById("total-per-person").textContent = `\₹ ${total_per_person}`;
 }
 
 calculateTip();
 
 function reset() {
-    bill = parseFloat(bill_Input.value);
-    bill_Input.value = bill.toFixed(2);
+   
+    document.getElementById("bill").textContent = `\₹ 0.00`;
+    document.getElementById("bill").value = 0;
 
     document.getElementById("tip-amount").textContent = `\₹ 0`;
+    document.getElementById("tip-amount").value = 0 ;
+
 
     document.getElementById("total-amount").textContent = `\₹ 0`;
+    document.getElementById("total-amount").value = 0;
+
 
     document.getElementById("tip-per-person").textContent = `\₹ 0 `;
+    document.getElementById("tip-per-person").value = 0;
 
-    document.getElementById("total-per-person").textContent = `\₹ 0`;
+    document.getElementById("split-num").textContent = ` 1 `;
+    document.getElementById("no-of-people").value = 1;
+
+    document.getElementById("tip-percent").textContent = `10%`;
+    document.getElementById("tip").value = 10;
+
+    // document.getElementById("total-per-person").textContent = `\₹ 0`;
 }
 reset();
