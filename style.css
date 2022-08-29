@@ -161,3 +161,8 @@ section:last-child .lbl {
     color: #989494;
     padding: 3px;
 }
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 350px;
+    }
+}
