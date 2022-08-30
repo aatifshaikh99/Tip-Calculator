@@ -5,7 +5,6 @@ sliders.forEach(function (sliders) {
 });
 
 const bill_Input = document.getElementById("bill");
-// bill_Input.addEventListener("click",calculateTip);
 
 var tip_percent;
 var no_of_people;
@@ -37,15 +36,12 @@ function calculateTip() {
 
     let tip_per_person = (total_tip / no_of_people).toFixed(2);
 
-    // let total_per_person = (total / no_of_people).toFixed(2);
-
     document.getElementById("tip-amount").textContent = `\₹ ${total_tip}`;
 
     document.getElementById("total-amount").textContent = `\₹ ${total}`;
 
     document.getElementById("tip-per-person").textContent = `\₹ ${tip_per_person} `;
 
-    // document.getElementById("total-per-person").textContent = `\₹ ${total_per_person}`;
 }
 
 calculateTip();
